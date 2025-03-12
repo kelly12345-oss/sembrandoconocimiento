@@ -1,0 +1,114 @@
+/* Estilo general del cuerpo */
+body {
+    font-family: 'Comic Sans MS', 'Arial', sans-serif; /* Tipografía amigable para niños */
+    background: linear-gradient(to bottom right, #f8f5f4, #ffcccb); /* Fondo degradado colorido */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor del formulario */
+form {
+    background-color: #ffffff; /* Fondo blanco para contraste */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); /* Sombra para profundidad */
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Títulos */
+form h2 {
+    color: #ff6f61; /* Color vibrante */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Texto secundario */
+form p {
+    color: #555555; /* Texto secundario */
+}
+
+/* Estilo de los campos de entrada */
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px; /* Bordes redondeados */
+    border: 2px solid #ffcccb; /* Borde suave */
+    font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none; /* Quitar borde azul predeterminado */
+    border-color: #ff6f61; /* Cambiar color al enfocar */
+}
+
+/* Botón de envío */
+button {
+    background-color: #ff6f61; /* Color principal del botón */
+    color: white;
+    border: none;
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff8566; /* Color más claro al pasar el mouse */
+    transform: scale(1.1); /* Efecto de agrandamiento */
+}
+
+/* Animación divertida en el formulario */
+form:hover {
+    animation: bounce 1s infinite alternate ease-in-out; /* Rebote suave al pasar el mouse */
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+/* Decoración adicional (opcional) */
+body::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 223, 186, 0.7);
+    border-radius: 50%;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(186, 255, 201, 0.7);
+    border-radius: 50%;
+}
+
+.error{
+    background-color: rgb(223, 110, 110);
+    color: black;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px;
+}
